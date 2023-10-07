@@ -7,7 +7,7 @@ sre course 2023q3
 Здесь взят монструозный плейбук из примера. Выпилены многомегабайтные образы и т.п. Оставлено остальное как есть. 
 
 Чуть поправлен под задачу vars/main.yaml. Переписан inventory в соответствии с поднятой инфраструктурой. 
-Запускается как и оригинальный ```ansible-playbook deploy_pgcluster.yml``` . 
+Запускается как и оригинальный ```ansible-playbook deploy_pgcluster.yml``` из каталога ansible_here. 
 
 ## helm chart -> каталог helm_herre
 
