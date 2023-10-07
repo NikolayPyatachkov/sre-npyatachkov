@@ -37,7 +37,7 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           env:
             - name: "CONNECTIONSTRINGS__PGCONNECTION"
-              value: "server=77.105.185.152; port=5000; database=weather; user id=postgres; password=postgres-pass;"
+              value: "server=91.185.85.61; port=5000; database=weather; user id=postgres; password=postgres-pass;"
             # - name: "SERILOG__MINIMUMLEVEL__DEFAULT"
             #   value: "Debug"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
@@ -46,7 +46,7 @@ spec:
               containerPort: {{ .Values.service.port }}
               protocol: TCP
           livenessProbe:
-            initialDelaySeconds: 10
+            initialDelaySeconds: 5
             failureThreshold: 3
             # periodSeconds: 10
             httpGet:
@@ -54,7 +54,7 @@ spec:
               port: http
           readinessProbe:
             # failureThreshold: 10
-            initialDelaySeconds: 15
+            initialDelaySeconds: 10
             failureThreshold: 3
             # periodSeconds: 10
             httpGet:

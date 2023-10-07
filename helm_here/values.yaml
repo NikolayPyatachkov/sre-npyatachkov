@@ -9,9 +9,9 @@ image:
   pullPolicy: IfNotPresent
   tag: "c4f3862"
 
-env:
-- name: "CONNECTIONSTRINGS__PGCONNECTION"
-  value: "server=77.105.185.152; port=5432; database=weather; user id=postgres; password=postgres-pass;"
+# env:
+# - name: "CONNECTIONSTRINGS__PGCONNECTION"
+#   value: "server=77.105.185.152; port=5432; database=weather; user id=postgres; password=postgres-pass;"
 
 
 imagePullSecrets: []
@@ -46,8 +46,8 @@ ingress:
       paths:
         - path: /
           pathType: ImplementationSpecific
-        - path: /cities
-          pathType: Prefix
+        # - path: /cities
+        #   pathType: Prefix
         # - path: /healthz/ready
         #   pathType: Prefix
   tls: []
