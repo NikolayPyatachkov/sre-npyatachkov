@@ -1,10 +1,14 @@
 # sre-npyatachkov
 sre course 2023q3
 ### ДЗ 1 по курсу SRE 
-ansible playbook -> каталог ansible_here
+## ansible playbook -> каталог ansible_here
 
+Здесь взят монструозный плейбук из примера. Выпилены многомегабайтные образы и т.п. Оставлено остальное как есть. 
 
-helm chart -> каталог helm_herre
+Переписан inventory в соответствии с поднятой инфраструктурой. 
+Запускается как и оригинальный ```ansible-playbook deploy_pgcluster.yml```
+
+## helm chart -> каталог helm_herre
 
 Собственно интересен по сути только values.yaml. Почти все в нем. Последняя версия образа , лимиты, ingress. Не припомню чтобы что-то еще там отличалось от дефолта.
 
