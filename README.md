@@ -1,12 +1,13 @@
-# sre-npyatachkov
 sre course 2023q3
 ### ДЗ 1 по курсу SRE 
+## Схема инфраструктуры в облаке 
+![infra](images/infra.png)
 ## ansible playbook -> каталог ansible_here
 
 Здесь взят монструозный плейбук из примера. Выпилены многомегабайтные образы и т.п. Оставлено остальное как есть. 
 
-Переписан inventory в соответствии с поднятой инфраструктурой. 
-Запускается как и оригинальный ```ansible-playbook deploy_pgcluster.yml```
+Чуть поправлен под задачу vars/main.yaml. Переписан inventory в соответствии с поднятой инфраструктурой. 
+Запускается как и оригинальный ```ansible-playbook deploy_pgcluster.yml``` . 
 
 ## helm chart -> каталог helm_herre
 
