@@ -18,6 +18,6 @@ sre course 2023q3
 В templates/deploymett.yaml поиграл с параметрами проб. Почему-то было не мало порченых проб на разных других таймерах. Там же env. для подключения контейнера api к базам.
 Остальное - как сгенерено, так и оставлено. 
 
-hostname - npyatachkov
+host: npyatachkov
 
 проверка работоспособности ```curl -H "Host:npyatachkov" 91.185.85.213/cities -v```
